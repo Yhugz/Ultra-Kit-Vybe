@@ -1,0 +1,60 @@
+name: "01 — Cahier des charges (collecte + validation)"
+description: "Collecter et valider les infos client avant architecture/design/dev."
+title: "01 — Cahier des charges — [CLIENT]"
+labels: ["brief"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Objectif : obtenir un brief **validé** avant toute production.
+        Modèle : `workflow/CAHIER_DES_CHARGES_TEMPLATE.md`
+  - type: input
+    id: client
+    attributes:
+      label: Client
+      placeholder: "Nom du client / entreprise"
+    validations:
+      required: true
+  - type: textarea
+    id: objectifs
+    attributes:
+      label: Objectifs (principal + secondaires)
+      description: "Ce que le site doit accomplir."
+      placeholder: |
+        Principal :
+        Secondaires :
+    validations:
+      required: true
+  - type: textarea
+    id: cible
+    attributes:
+      label: Cible / audience
+      placeholder: "Personas, contexte d’usage, objections..."
+    validations:
+      required: true
+  - type: textarea
+    id: pages
+    attributes:
+      label: Pages & fonctionnalités
+      placeholder: |
+        Pages :
+        Fonctionnalités :
+    validations:
+      required: true
+  - type: textarea
+    id: seo
+    attributes:
+      label: SEO (mots-clés + zones)
+      placeholder: |
+        Mots-clés :
+        Zones :
+    validations:
+      required: false
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: Validation
+      options:
+        - label: Cahier des charges signé ou validation écrite obtenue
+          required: true
+
