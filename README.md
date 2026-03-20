@@ -7,7 +7,7 @@
 
 ```bash
 # 1. Cloner pour un nouveau projet
-git clone https://github.com/Yhugz/vybe-starter.git nom-du-client
+git clone https://github.com/Yhugz/Ultra-Kit-Vybe.git nom-du-client
 cd nom-du-client
 rm -rf .git && git init
 
@@ -15,17 +15,11 @@ rm -rf .git && git init
 npx create-next-app@latest . --typescript --app --tailwind=false
 npm install gsap
 
-# 3. Copier les agents dans Copilot (une seule fois par machine)
-# Windows :
-# Copy-Item .vscode/prompts/*.agent.md "$env:APPDATA\Code\User\prompts\" -Force
-# macOS :
-# cp .vscode/prompts/*.agent.md ~/Library/Application\ Support/Code/User/prompts/
-# Linux :
-# cp .vscode/prompts/*.agent.md ~/.config/Code/User/prompts/
-
-# 4. Ouvrir VS Code
+# 3. Ouvrir VS Code
 code .
 ```
+
+> Les agents Copilot sont détectés **automatiquement** depuis `.vscode/prompts/` — aucune copie manuelle nécessaire.
 
 ## Structure du repo
 
